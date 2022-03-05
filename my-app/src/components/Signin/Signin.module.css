@@ -2,8 +2,7 @@
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    background-color: #e9bdbd;
+    padding-top: 20px;
 }
 .form {
     width: 400px;
@@ -14,7 +13,7 @@
     border-radius: 6px;
     margin: 24px;
     align-self: center;
-    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+    box-shadow: 0 10px 12px 0 rgb(51 62 73 / 12%);
 }
 .headingSignIn {
     text-align: center;
@@ -55,6 +54,7 @@
     padding: 8px 0px 6px 12px !important;
     border-radius: 7px !important;
 }
+
 .formSubmit {
     padding: 8px 39px;
     color: #FFFFFF;
