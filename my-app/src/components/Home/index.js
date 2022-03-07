@@ -153,15 +153,13 @@ const Home = () => {
                     <Link to="/">
                         <div className={styles.homeButton}>
                             <p>View more</p>
+                            <h2>Conflict day ne</h2>
                         </div>
                     </Link>
                 </div>
             </section>
             <Footer />
         </body>
-        //hieudeptrai vl 
-        //hieulai dep trai vai noi
-        //hieunes
     )
 }
 
