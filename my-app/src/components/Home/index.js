@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Home.module.css";
 import Header from "../Header";
+import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -134,7 +135,7 @@ const Home = () => {
                 </div>
                 <Link to="/">
                     <div className={styles.homeButton}>
-                        <p>View more</p>
+                        <Link to="/about-us"><p>View more</p></Link>
                     </div>
                 </Link>
 
@@ -156,6 +157,7 @@ const Home = () => {
                     </Link>
                 </div>
             </section>
+            <Footer />
         </body>
         //hieudeptrai vl 
         //hieulai dep trai vai noi
@@ -164,4 +166,3 @@ const Home = () => {
 }
 
 export default Home
-

@@ -1,56 +1,57 @@
 import React from "react";
 import styles from "./Header.module.css";
+import {Link} from 'react-router-dom'
 const Header = () => {
     return (
         <header className={`container ${styles.header}`}>
             <div className={styles.headerLogo}>
-                <img src="./icons/logo.png" />
+                <Link to="/"><img alt="" src="./icons/logo.png" /></Link>
             </div>
             <nav className={styles.headerNavigation}>
                 <ul>
                     <li>
-                        <a>
-                            <img src="./icons/home.png" />
+                        <Link to="/">
+                            <img alt="" src="./icons/home.png" />
                             <p>Home</p>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a>
-                            <img src="./icons/guide.png" />
+                            <img alt="" src="./icons/guide.png" />
                             <p>Guide</p>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <img src="./icons/camera.png" />
+                            <img alt="" src="./icons/camera.png" />
                             <p>Camera</p>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <img src="./icons/statistic.png" />
+                            <img alt="" src="./icons/statistic.png" />
                             <p>Statistic</p>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <img src="./icons/report.png" />
+                            <img alt="" src="./icons/report.png" />
                             <p>Report</p>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <img src="./icons/about us.png" />
+                        <Link to="/about-us">
+                            <img src="./icons/about us.png" alt="" />
                             <p>About us</p>
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
             <div className={styles.headerLogin}>
-                <a>
-                    <img src="./icons/sign in.png"></img>
+                <Link to="/signin">
+                    <img src="./icons/sign in.png" atl="" />
                     <p>Sign in</p>
-                </a>
+                </Link>
             </div>
         </header>
     )
