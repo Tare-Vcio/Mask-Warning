@@ -152,8 +152,21 @@ const Home = () => {
                     </div>
                     <Link to="/">
                         <div className={styles.homeButton}>
-                            <p>View more</p>
-                            <h2>Conflict day ne</h2>
+                            <a>View more</a>
+                            <a>View more</a>
+
+                            <a>View more</a>
+
+
+                            <a>View more</a>
+
+
+                            <a>View more</a>
+
+                            <a>View more</a>
+
+                            <a>View more</a>
+
                         </div>
                     </Link>
                 </div>
