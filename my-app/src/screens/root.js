@@ -1,21 +1,26 @@
 import React from "react"
 import {Routes, Route } from "react-router-dom"
 import Home from "../components/Home"
-import Contact from "../components/Contact"
 import Guide from "../components/Guide"
 import GuideConnectCamera from "../components/GuideConnectCamera"
 import GuideReportDefect from "../components/GuideReportDefect"
 import ForgotPassword from "../components/Forgot password"
+import AboutUs from "../components/AboutUs"
+import SignIn from "../components/Signin"
+import Footer from "../components/Footer"
 
 const ScreensRoot  = () => {
     return (
+      
       <Routes>  
         <Route path="/"        element={ <Home /> } />  
-        <Route path="/contact" element={ <Contact />} />
         <Route path="/guide" element={ <Guide />} />
         <Route path="/connect-camera" element={ <GuideConnectCamera />} />
         <Route path="/report-defect" element={ <GuideReportDefect />} />
         <Route path="/forgot-password" element={ <ForgotPassword />} />
+        <Route path="/about-us" element={ <AboutUs />} />
+        <Route path="/signIn"   element={ <SignIn />} />
+        <Route path="/footer"   element={ <Footer />} />
       </Routes>
     )
 }
