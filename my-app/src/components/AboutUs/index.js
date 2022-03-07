@@ -2,11 +2,24 @@ import React from "react"
 import styles from "./AboutUs.module.css"
 import Header from "../Header"
 import Footer from "../Footer"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import {AboutUsSlick} from './style';
+
 const AboutUs = () =>{
+    var settings = {
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      };
     return (
-        <div>
+        <AboutUsSlick >
             <Header />
-            <div className={styles.aboutUs}>
+            <div className={`container ${styles.aboutUs}`}>
                 <div className="container">
                     <h2 className={styles.heading}>About Us</h2>
                     <div className={`${styles.myTeam}`}>
@@ -19,39 +32,41 @@ const AboutUs = () =>{
                         <h3 className={styles.headingOurTeam}>Our Team</h3>
                     </div>
 
-                    <div className="row">
-                        <div className="col-lg-3 col-md-4 col-sm-6">
-                            <img className={styles.avatar} src="./img/thanhtuan.png" alt="" />
-                            <h4 className={styles.nameAvatar}>Huỳnh Đức Thanh Tuấn</h4>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6">
-                            <img className={styles.avatar} src="./img/thanhtuan.png" alt="" />
-                            <h4 className={styles.nameAvatar}>Huỳnh Đức Thanh Tuấn</h4>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6">
-                            <img className={styles.avatar} src="./img/thanhtuan.png" alt="" />
-                            <h4 className={styles.nameAvatar}>Huỳnh Đức Thanh Tuấn</h4>
-                        </div>
-                        <div className="col-lg-3 col-md-4 col-sm-6">
-                            <img className={styles.avatar} src="./img/thanhtuan.png" alt="" />
-                            <h4 className={styles.nameAvatar}>Huỳnh Đức Thanh Tuấn</h4>
-                        </div>
-                    </div>
-                    {/* arrow_back  arrow_forward panorama_fish_eye*/}
+                   <Slider {...settings} >
+                        
+                        <div className={styles.sliderMember} >
+                            <img className={styles.avatar} src="./img/TeamMember.png" alt="" />
+                            <h4 className={styles.nameAvatar}>Huỳnh Ngọc Hiếu</h4>
 
-                    <div className={styles.carouselItem}>
-                        <i className="small material-icons">arrow_back </i> 
-                        <div className={styles.nextItem}>
-                            <i className="tiny material-icons">panorama_fish_eye </i> 
-                            <i className="tiny material-icons">panorama_fish_eye </i> 
-                            <i className="tiny material-icons">panorama_fish_eye </i> 
                         </div>
-                        <i className="small material-icons">arrow_forward </i> 
-                    </div>
+                                                    
+                        <div className={styles.sliderMember}>
+                            <img className={styles.avatar} src="./img/TeamMember-1.png" alt="" />
+                            <h4 className={styles.nameAvatar}>Huỳnh Đức Thanh Tuấn</h4>
+
+                        </div>
+                                                    
+                        <div className={styles.sliderMember}>
+                            <img className={styles.avatar} src="./img/TeamMember-2.png" alt="" />
+                            <h4 className={styles.nameAvatar}>Võ Trung Hiếu</h4>
+
+                        </div>
+                                                    
+                        <div className={styles.sliderMember}>
+
+                            <img className={styles.avatar} src="./img/TeamMember-3.png" alt="" />
+                            <h4 className={styles.nameAvatar}>Nguyễn Hồng Lịch</h4>
+                        </div>
+                        <div className={styles.sliderMember}>
+
+                            <img className={styles.avatar} src="./img/TeamMember-3.png" alt="" />
+                            <h4 className={styles.nameAvatar}>Nguyễn Hồng Lịch</h4>
+                        </div>
+                    </Slider>
                 </div>
             </div>
             <Footer />
-        </div>
+        </AboutUsSlick>
     )
 }
 

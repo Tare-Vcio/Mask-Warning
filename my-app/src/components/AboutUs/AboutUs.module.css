@@ -36,25 +36,23 @@
     line-height: 88px;
     color: #009FFF;
     margin-top: 70px;
+    margin-bottom: 30px ;
 }
 .avatar {
     width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 .nameAvatar {
-    position: absolute;
-    right: 118px;
-    top: 382px;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 48px;
-    color: #262626;
     text-align: center;
+    margin-top: 18px;
 }
+
 .carouselItem {
     display: flex;
     justify-content: center;
+}
+.sliderMember {
+    padding: 0 50px;
 }
 .nextItem {
     height: 18px;
