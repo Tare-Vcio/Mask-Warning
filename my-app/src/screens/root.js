@@ -5,6 +5,8 @@ import Contact from "../components/Contact"
 import Guide from "../components/Guide"
 import GuideConnectCamera from "../components/GuideConnectCamera"
 import GuideReportDefect from "../components/GuideReportDefect"
+import ForgotPassword from "../components/Forgot password"
+
 const ScreensRoot  = () => {
     return (
       <Routes>  
@@ -13,7 +15,7 @@ const ScreensRoot  = () => {
         <Route path="/guide" element={ <Guide />} />
         <Route path="/connect-camera" element={ <GuideConnectCamera />} />
         <Route path="/report-defect" element={ <GuideReportDefect />} />
-
+        <Route path="/forgot-password" element={ <ForgotPassword />} />
       </Routes>
     )
 }
