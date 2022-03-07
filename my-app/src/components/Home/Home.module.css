@@ -28,6 +28,10 @@
   color: #ffffff !important;
 }
 
+.homeSlider .slick-dots {
+  display: none;
+}
+
 .homeSliderArrowBot {
   position: absolute;
   z-index: 2;

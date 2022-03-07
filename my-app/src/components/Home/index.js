@@ -2,24 +2,65 @@ import React from "react";
 import styles from "./Home.module.css";
 import Header from "../Header";
 import { Link } from "react-router-dom";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "./sliderDot.css";
+
 const Home = () => {
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 200,
+        autoplay: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    };
     return (
         <body>
             <section className={`container_fluid ${styles.home}`}>
                 < Header />
-                <div className={styles.homeSlider}>
-                    <img src="./icons/slider.png"></img>
-                    <Link to="/">
-                        <div className={styles.homeSliderGettingStarted}>
-                            <p>Getting Started</p>
-                        </div>
-                    </Link>
-                    <Link to="/">
-                        <div className={styles.homeSliderArrowBot}>
-                            <img src="./icons/arrowBottom.png"></img>
-                        </div>
-                    </Link>
-                </div>
+                <Slider {...settings}>
+                    <div className={styles.homeSlider}>
+                        <img src="./icons/slider.png"></img>
+                        <Link to="/">
+                            <div className={styles.homeSliderGettingStarted}>
+                                <p>Getting Started</p>
+                            </div>
+                        </Link>
+                        <Link to="/">
+                            <div className={styles.homeSliderArrowBot}>
+                                <img src="./icons/arrowBottom.png"></img>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className={styles.homeSlider}>
+                        <img src="./icons/slider.png"></img>
+                        <Link to="/">
+                            <div className={styles.homeSliderGettingStarted}>
+                                <p>Getting Started</p>
+                            </div>
+                        </Link>
+                        <Link to="/">
+                            <div className={styles.homeSliderArrowBot}>
+                                <img src="./icons/arrowBottom.png"></img>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className={styles.homeSlider}>
+                        <img src="./icons/slider.png"></img>
+                        <Link to="/">
+                            <div className={styles.homeSliderGettingStarted}>
+                                <p>Getting Started</p>
+                            </div>
+                        </Link>
+                        <Link to="/">
+                            <div className={styles.homeSliderArrowBot}>
+                                <img src="./icons/arrowBottom.png"></img>
+                            </div>
+                        </Link>
+                    </div>
+                </Slider>
             </section>
             <section className={`container ${styles.homeOurService}`}>
                 <div className={styles.homeText}>
