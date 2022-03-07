@@ -153,20 +153,7 @@ const Home = () => {
                     <Link to="/">
                         <div className={styles.homeButton}>
                             <a>View more</a>
-                            <a>View more</a>
-
-                            <a>View more</a>
-
-
-                            <a>View more</a>
-
-
-                            <a>View more</a>
-
-                            <a>View more</a>
-
-                            <a>View more</a>
-
+                           
                         </div>
                     </Link>
                 </div>
