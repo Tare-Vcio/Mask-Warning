@@ -19,16 +19,10 @@
     height: 60px;
 }
 
-.lineAll{
-    width: 95%;
-    height: 1px;
-    top: 160px;
-}
-
 .formHeader{
     color: #3751FE;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 30px;
 }
 .formButton{
     display: flex;
@@ -36,8 +30,8 @@
     align-items: flex-end;
     padding-top: 25px;
 }
+
 .buttonSend{
-    display: flex;
     padding: 8px 39px;
     color: #FFFFFF;
     background-color: #3751FE;
@@ -45,7 +39,6 @@
     font-size: 18px;
 }
 .buttonCancel{
-    display: flex;
     padding: 8px 39px;
     color: #000000;
     background-color: #D9D9D9;
@@ -56,29 +49,36 @@
 }
 .form{
     margin: 0 auto;
-    width: 653px;
-    background-color: #f7f5f5;
+    width: 700px;
+    background: rgba(196, 196, 196, 0.18);
     align-self: center;
     padding: 30px;
     box-sizing: border-box;
     border-radius: 20px;
-    box-shadow: 0 10px 12px 0 rgb(51 62 73 / 12%);
 }
 
-.formString{
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: black;
-}
 .line{
-    width: 593px;
+    width: 100%;
 }
+
+.lineAll{
+    width: 95%;
+    height: 1px;
+    top: 160px;
+}
+
 .formControl{
     color: #030303;
+    width: 513px;
+    height: 30px;
     border: 1px solid #000000 !important;
     padding: 8px 0px 6px 12px !important;
     border-radius: 7px !important;
-    
+    margin-top:13px !important;
+}
+
+.input#inputCode{
+    margin-top: 13px;
 }
 
 .imageForgot{

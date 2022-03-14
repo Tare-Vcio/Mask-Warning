@@ -5,43 +5,43 @@ const Header = () => {
     return (
         <header className={`container ${styles.header}`}>
             <div className={styles.headerLogo}>
-                <Link to="/"><img alt="" src="./icons/logo.png" /></Link>
+                <Link to="/"><img alt="" src="../../icons/logo.png" /></Link>
             </div>
             <nav className={styles.headerNavigation}>
                 <ul>
                     <li>
                         <Link to="/">
-                            <img alt="" src="./icons/home.png" />
+                            <img alt="" src="../../icons/home.png" />
                             <p>Home</p>
                         </Link>
                     </li>
                     <li>
                         <Link to="/guide">
-                            <img alt="" src="./icons/guide.png" />
+                            <img alt="" src="../../icons/guide.png" />
                             <p>Guide</p>
                         </Link>
                     </li>
                     <li>
                         <Link to="#!">
-                            <img alt="" src="./icons/camera.png" />
+                            <img alt="" src="../../icons/camera.png" />
                             <p>Camera</p>
                         </Link>
                     </li>
                     <li>
                         <Link to="#!">
-                            <img alt="" src="./icons/statistic.png" />
+                            <img alt="" src="../../icons/statistic.png" />
                             <p>Statistic</p>
                         </Link>
                     </li>
                     <li>
                         <Link to="#!">
-                            <img alt="" src="./icons/report.png" />
+                            <img alt="" src="../../icons/report.png" />
                             <p>Report</p>
                         </Link>
                     </li>
                     <li>
                         <Link to="/about-us">
-                            <img src="./icons/about us.png" alt="" />
+                            <img src="../../icons/about us.png" alt="" />
                             <p>About us</p>
                         </Link>
                     </li>
@@ -49,7 +49,7 @@ const Header = () => {
             </nav>
             <div className={styles.headerLogin}>
                 <Link to="/signin">
-                    <img src="./icons/sign in.png" atl="" />
+                    <img src="../icons/sign in.png" atl="" />
                     <p>Sign in</p>
                 </Link>
             </div>
