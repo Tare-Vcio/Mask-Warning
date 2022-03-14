@@ -16,10 +16,10 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="/guide">
                             <img alt="" src="./icons/guide.png" />
                             <p>Guide</p>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <a>

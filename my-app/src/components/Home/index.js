@@ -88,7 +88,7 @@ const Home = () => {
             </section>
             <section className={`container ${styles.homeGuide}`}>
                 <div className={styles.homeText}>
-                    <div>
+                    <div>                 
                         <h2>Guide</h2>
                         <img src="./icons/line.png"></img>
                     </div>

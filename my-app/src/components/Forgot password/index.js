@@ -5,7 +5,7 @@ const ForgotPassword = () => {
     return (
         <section >
             < Header />
-            <h1 className={styles.headerString}>Forgot Password</h1>
+            <h1 className={`${styles.headerString} d-flex`}>Forgot Password</h1>
 
             <form className={styles.form}>
                 <h2 className={styles.formHeader}>Reset your password</h2>
