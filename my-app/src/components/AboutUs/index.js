@@ -13,7 +13,7 @@ const AboutUs = () =>{
         infinite: true,
         autoplay: true,
         speed: 500,
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1
       };
     return (
@@ -55,6 +55,10 @@ const AboutUs = () =>{
                         <div className={styles.sliderMember}>
                             <img className={styles.avatar} src="./img/TeamMember-3.png" alt="" />
                             <h4 className={styles.nameAvatar}>Nguyễn Hồng Lịch</h4>
+                        </div>
+                        <div className={styles.sliderMember}>
+                            <img className={styles.avatar} src="./img/TeamMember-4.png" alt="" />
+                            <h4 className={styles.nameAvatar}>Lê Văn Thuần</h4>
                         </div>
                     </Slider>
                 </div>
