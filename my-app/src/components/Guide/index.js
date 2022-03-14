@@ -19,10 +19,13 @@ const Guide = () => {
                 </Link>
 
 
-                <div className={styles.item}>
-                    <img className={styles.image} src="./img/report_defect.png"></img>
-                    <p className={styles.contentString}>2. Report Defect</p>
-                </div>
+                <Link to="/report-defect">
+                    <div className={styles.item}>
+                        <img className={styles.image} src="./img/report_defect.png"></img>
+                        <p className={styles.contentString}>2. Report Defect</p>
+                    </div>
+               
+                </Link>
             </div>
 
         </section> 

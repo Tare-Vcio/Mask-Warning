@@ -16,28 +16,28 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="/guide">
                             <img alt="" src="./icons/guide.png" />
                             <p>Guide</p>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="#!">
                             <img alt="" src="./icons/camera.png" />
                             <p>Camera</p>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="#!">
                             <img alt="" src="./icons/statistic.png" />
                             <p>Statistic</p>
-                        </a>
+                        </Link>
                     </li>
                     <li>
-                        <a>
+                        <Link to="#!">
                             <img alt="" src="./icons/report.png" />
                             <p>Report</p>
-                        </a>
+                        </Link>
                     </li>
                     <li>
                         <Link to="/about-us">

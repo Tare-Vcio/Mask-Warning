@@ -88,7 +88,7 @@ const Home = () => {
             </section>
             <section className={`container ${styles.homeGuide}`}>
                 <div className={styles.homeText}>
-                    <div>
+                    <div>                 
                         <h2>Guide</h2>
                         <img src="./icons/line.png"></img>
                     </div>
@@ -97,7 +97,7 @@ const Home = () => {
                 <div className={styles.homeGuideImage}>
                     <img src="./icons/outline.png"></img>
                 </div>
-                <Link to="/">
+                <Link to="/guide">
                     <div className={styles.homeButton}>
                         <p>View more</p>
                     </div>
@@ -133,9 +133,9 @@ const Home = () => {
                         <p>Le Van Thuan</p>
                     </div>
                 </div>
-                <Link to="/">
+                <Link to="/about-us">
                     <div className={styles.homeButton}>
-                        <Link to="/about-us"><p>View more</p></Link>
+                       <p>View more</p>
                     </div>
                 </Link>
 

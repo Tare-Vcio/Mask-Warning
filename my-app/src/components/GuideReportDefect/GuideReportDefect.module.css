@@ -41,3 +41,7 @@
     display: flex;
     align-items: center;
 }
+
+.routeIcon{
+    transform: rotate(180deg);
+}

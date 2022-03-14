@@ -12,6 +12,11 @@ html {
 .container {
   max-width: 1700px;
 }
-.slick-arrow {
-  color: red !important;
+
+a {
+  text-decoration: none !important;
+}
+nav ul a:hover {
+  background-color: #fff;
+  cursor: pointer;
 }
