@@ -97,7 +97,7 @@ const Home = () => {
                 <div className={styles.homeGuideImage}>
                     <img src="./icons/outline.png"></img>
                 </div>
-                <Link to="/">
+                <Link to="/guide">
                     <div className={styles.homeButton}>
                         <p>View more</p>
                     </div>
@@ -133,9 +133,9 @@ const Home = () => {
                         <p>Le Van Thuan</p>
                     </div>
                 </div>
-                <Link to="/">
+                <Link to="/about-us">
                     <div className={styles.homeButton}>
-                        <Link to="/about-us"><p>View more</p></Link>
+                       <p>View more</p>
                     </div>
                 </Link>
 
@@ -150,12 +150,9 @@ const Home = () => {
                         <img src="./icons/line.png"></img>
                         <p>In this page. In the progress, If you have any problem. Please contact with developer team. Click View more to report this defect what you met.</p>
                     </div>
-                    <Link to="/">
+                    <Link to="#">
                         <div className={styles.homeButton}>
-                            <a>View more</a>
-                            <a>View more</a>
-
-                           
+                            <p>View more</p>
                         </div>
                     </Link>
                 </div>

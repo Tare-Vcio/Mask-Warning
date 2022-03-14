@@ -43,8 +43,8 @@ const GuideReportDefect = () => {
                 
             </div>
 
-           <Link to="/" className={styles.button}>
-                <img src="./icons/right-arrow.png"></img>
+           <Link to="/connect-camera" className={styles.button}>
+                <img className={styles.routeIcon} src="./icons/right-arrow.png"></img>
                 <p className={styles.text}>Previous guide 1</p>
                 
            </Link>
