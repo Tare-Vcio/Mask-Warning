@@ -12,8 +12,8 @@ const Home = () => {
     var settings = {
         dots: true,
         infinite: true,
-        speed: 200,
-        autoplay: false,
+        speed: 500,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1
     };
@@ -150,11 +150,9 @@ const Home = () => {
                         <img src="./icons/line.png"></img>
                         <p>In this page. In the progress, If you have any problem. Please contact with developer team. Click View more to report this defect what you met.</p>
                     </div>
-                    <Link to="#">
-                        <div className={styles.homeButton}>
-                            <p>View more</p>
-                        </div>
-                    </Link>
+                    <div className={styles.homeButton}>
+                        <Link to="/about-us"><p>View more</p></Link>
+                    </div>
                 </div>
             </section>
             <Footer />
