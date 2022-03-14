@@ -9,7 +9,6 @@ import {AboutUsSlick} from './style';
 
 const AboutUs = () =>{
     var settings = {
-        dots: true,
         infinite: true,
         autoplay: true,
         speed: 500,
