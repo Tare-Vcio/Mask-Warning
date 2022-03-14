@@ -11,7 +11,7 @@ const Guide = () => {
             </h1>
             
             <div className={styles.headerGuide}>
-                <Link to="/connect-camera">
+                <Link to="/guide/connect-camera">
                     <div>
                         <img className={styles.image} src="./img/connected_camera.png"></img>
                         <p className={styles.contentString} >1. Connect Camera</p>
@@ -19,7 +19,7 @@ const Guide = () => {
                 </Link>
 
 
-                <Link to="/report-defect">
+                <Link to="/guide/report-defect">
                     <div className={styles.item}>
                         <img className={styles.image} src="./img/report_defect.png"></img>
                         <p className={styles.contentString}>2. Report Defect</p>

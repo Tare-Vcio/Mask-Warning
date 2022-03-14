@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Signin.module.css"
 import Header from "../Header";
+import { Link } from "react-router-dom";
 
 const SignIn = () => {
     return (
@@ -26,7 +27,7 @@ const SignIn = () => {
                             <span className={styles.formRememberText} style={{fontSize: "14px"}}
                             >Remember Me</span>
                         </div>
-                        <span className={styles.formForgotPassword}>Forgot Password?</span>
+                        <Link to="/forgot-password" className={styles.formForgotPassword}>Forgot Password?</Link>
                     </div>
 
                     <button type="button" class={`${styles.formSubmit}`}>Sign in</button>
