@@ -22,7 +22,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="#!">
+                        <Link to="/camera">
                             <img alt="" src="./icons/camera.png" />
                             <p>Camera</p>
                         </Link>
@@ -34,7 +34,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="#!">
+                        <Link to="/report">
                             <img alt="" src="./icons/report.png" />
                             <p>Report</p>
                         </Link>
