@@ -23,14 +23,40 @@ const Camera = () => {
                     </Link>
 
                 </div>
-                <div className="col-9">
+                <div className={`col-9 ${styles.reportRight}`}>
                     <div className={`col-4 ${styles.chooseImage}`}>
                         <h5>Choose image</h5>
                         <img src="./img/imageDefault.jpg"></img>
+                        <p className={styles.textInstruction}>Click "Choose File" button to upload an image:</p>
                         <input type="file" />
                     </div>
-                    <div className="col-4"></div>
-                    <div className="col-4"></div>
+                    <div className={`col-4 ${styles.chooseImage}`}>
+                        <h5>Choose bugs</h5>
+                        <div className={styles.selectionBug}>
+                            <p>Camera error</p>
+                            <select>
+                                <option value=''> -- Please select --
+                                </option>
+                                <option value="A">Apple</option>
+                                <option value="B">Banana</option>
+                                <option value="C">Cranberry</option>
+                            </select>
+                        </div>
+                        <div className={styles.selectionBug}>
+                            <p>Speaker error</p>
+                            <select>
+                                <option value=''> -- Please select --
+                                </option>
+                                <option value="A">Apple</option>
+                                <option value="B">Banana</option>
+                                <option value="C">Cranberry</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div className={`col-4 ${styles.reportDescription}`}>
+                    <h5>Description</h5>
+                    <input type="text" placeholder="report description"></input>
+                    </div>
                 </div>
             </div>
         </section>
